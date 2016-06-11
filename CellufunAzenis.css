@@ -6,7 +6,6 @@ https://www.gnome-look.org/content/show.php?content=106608&forumpage=8
 
 ***************************/
 
-
 body {
     font-size: 100%;
     line-height: 100%;
@@ -71,4 +70,54 @@ textarea {
     width: 85%;
     color: #17b2ff;
     background-color: #484848;
+}
+div.GameCatalogButton, div.FeaturedGameCatalogButton {
+    background-color: #484848;
+    border: 2px solid #17b2ff;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    height: 190px;
+    line-height: 100%;
+    -moz-border-radius: 5px;
+    margin: 10px 4px 0 4px;
+    position: relative;
+    text-align: center;
+    width: 223px;
+}
+div.FeaturedGameCatalogButton {
+    background-color: #484848;
+    border: 2px solid #17b2ff;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    height: 190px;
+    line-height: 100%;
+    -moz-border-radius: 5px;
+    margin: 10px 4px 0 4px;
+    position: relative;
+    text-align: center;
+    width: 458px;
+}
+div.FeaturedGameCatalogButton span {
+    color: #17b2ff;
+    font-size: 19px;
+    left: 0;
+    line-height: 120%;
+    margin-left: 10px;
+    position: absolute;
+    text-align: left;
+    top: 135px;
+    width: 444px;
+}
+div.FeaturedGameCatalogButton span {
+    color: #17b2ff;
+    font-size: 19px;
+    left: 0;
+    line-height: 120%;
+    margin-left: 10px;
+    position: absolute;
+    text-align: left;
+    top: 135px;
+    width: 444px;
 }
