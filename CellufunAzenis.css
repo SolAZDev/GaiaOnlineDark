@@ -121,3 +121,12 @@ div.FeaturedGameCatalogButton span {
     top: 135px;
     width: 444px;
 }
+div.GameCatalogButton span, div.FeaturedGameCatalogButton span {
+    color: #17b2ff;
+    font-family: HOBO STD,Helvetica,Arial,sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 100%;
+    margin-top: 0px;
+    text-shadow: 1px 1px #6b3a01;
+}
