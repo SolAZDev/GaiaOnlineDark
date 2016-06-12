@@ -9,10 +9,8 @@ CHANGELOG::
 0.1a - Initial Release, Solrac was Super Sleepy but coudln't sleep
 0.2a - Fixed minor bugs and missing pieces, still investigatin' other parts
 0.3a - Fixed some pieces for the Non-BetterGaia users
+0.4a - Major Fixes to The Vanilla Gaia
 
-
-Inspired by the GTK2 Theme Azenis by JamesHardy88
-https://www.gnome-look.org/content/show.php?content=106608&forumpage=8
 */
 
 
@@ -68,7 +66,27 @@ body.app-page_privmsgs #gaia_content td.quote {
     font-style: oblique;
 }
 
+
 /* MYGAIA */
+#gaia_content, #content {
+    background-color: #242424;
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+#gaia_content {
+    min-width: 1140px;
+    padding: 20px 14px;
+    margin: 0;
+    background: #242424;
+}
+
+#bd .mg_content.suggested .ft {
+    background-color: #484848;
+    font-size: 11px;
+    border-left: 1px solid #17b2ff;
+}
 #bd .mg_content .bd li{
     height: 28px;
     line-height: 14px;
@@ -77,7 +95,7 @@ body.app-page_privmsgs #gaia_content td.quote {
     background: #242424;
 }
 .friends .ft.see_all div.see_all {
-    padding: 8px 0 8px 35px;
+    padding: 8px 0 15px 35px;
     background: #484848;
 }
 #gaia_content .my_status {
@@ -91,6 +109,11 @@ body.app-page_privmsgs #gaia_content td.quote {
     width: 225px;
     position: relative;
     overflow: hidden;
+}
+#bd .mg_content .ft {
+    background-color: #484848;
+    border-right: 1px solid #17b2ff;
+    border-bottom: 1px solid #17b2ff;
 }
 #gaia_content .user_status_message .status div.lead {
     width: 8px;
@@ -114,7 +137,7 @@ body.mygaia #gaia_content #bd .mg_status .friend_statuses {
 }
 
 .ft.see_all div.see_all {
-    padding: 8px 0 8px 23px;
+    padding: 8px 0 15px 23px;
     background-color: #484848;
     width: auto;
     position: relative;
@@ -128,6 +151,12 @@ body.mygaia #gaia_content #bd .mg_content .mg_sprite.hd, body.mygaia #gaia_conte
     font: bold 20px "Century Gothic", "TeXGyreAdventorRegular", Arial, sans-serif;
     color: #17b2ff;
     padding: 0 1px .25em;
+}
+#bd .suggested h3 {
+    color: #17b2ff;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 0 0 7px;
 }
 
 body.mygaia.app-page_mygaia #gaia_content.grid_ray_davies #bd #yui-main .yui-g {
@@ -161,6 +190,16 @@ body.mygaia #gaia_content #bd .mg_status .my_status .status p, body.mygaia #gaia
     float: left;
     width: 81px;
 }
+#bd .mg_content .bd {
+    background-color: #242424;
+    border-top: 1px solid #17b2ff;
+    border-right: 1px solid #17b2ff;
+}
+.right .mystats .bd {
+    padding: 22px 0 23px 26px;
+    border: 1px solid #17b2ff;
+    margin: 0;
+}
 
 a:-any-link {
     color: #17b2ff;
@@ -178,6 +217,16 @@ a:-any-link {
     background: #242424;
     padding: 0px 15px 5px 15px;
 }
+#bd .friends .bd li {
+    float: left;
+    width: 131px;
+    height: auto;
+    position: relative;
+    padding: 0;
+    margin: 0 1px 20px 1px;
+    font-size: 11px;
+    z-index: 1;
+}
 body.mygaia #gaia_content #bd .mg_status .friend_statuses {
     margin: 0;
     border-color: #17b2ff;
@@ -191,14 +240,7 @@ body.mygaia #gaia_content #bd #friends2.mg_content .bd .bd_inner .friends_wrappe
     border-radius: 3px;
 }
 body.mygaia #gaia_content #bd #friends2.mg_content .bd .bd_inner .friends_wrapper ul.mygaia-friends li:hover .user_name a {
-    width: auto;
-    position: absolute;
-    left: 0;
-    padding: 5px;
-    background: #484848;
-    top: 0;
-    border-radius: 3px;
-    z-index: 1;
+	background: #484848;
 }
 body.mygaia #gaia_content #bd #friends2.mg_content .bd .bd_inner .friends_wrapper ul.mygaia-friends li:hover .online_status a {
     background: #484848;
@@ -254,6 +296,7 @@ body.mygaia #gaia_content #bd .mg_content .bd, body.mygaia #gaia_content #bd .mg
 .timestamp{
     color: #17b2ff;
 }
+
 /* AVI DRESS */
 #inventory-search form {
     padding: 5px;
@@ -364,7 +407,11 @@ body.app-page_privmsgs #gaia_content td, body.app-page_privmsgs #gaia_content th
     background: #484848;
     position: relative;
 }
-
+#gaia_content #bd {
+    width: 940px;
+    background-color: #242424;
+    overflow: hidden;
+}
 
 /*FRIENDSHIP*/
 #listdetail th {
@@ -490,6 +537,66 @@ gold-price, .gcash-price {
 }
 
 /* Marketplace - Infliation Galore, THXGAIA*/
+#gaia_content .vend_rows_sh_rowB, #gaia_content .item_rowB, #gaia_content .vend_rows_ex_rowB {
+    background-color: #484848;
+}
+#gaia_content .box_header_stretched {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/rs_box_top_blue_600.png) repeat-x scroll bottom left; */
+    background: #17b2ff;
+}
+#gaia_content .box_footer_stretched {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/rs_box_bottom_blue_600.png) repeat-x scroll 0 0; */
+    margin-bottom: 10px;
+    background: #17b2ff;
+}
+#gaia_content div.vend_rows_ex, #gaia_content .moduleContainer {
+    border: 2px solid #17b2ff;
+    border-style: none solid none solid;
+    width: 916px;
+}
+#gaia_content .searchbox_content {
+    background-color: #484848;
+    border-left: 2px #484848 solid;
+    border-right: 2px #484848 solid;
+    font-weight: bold;
+}
+#gaia_content .searchbox_stretched_footer {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/rs_bottom_brown_920.png) repeat-x scroll top left; */
+    background: #484848;
+}
+#gaia_content .item_rows_header th, #gaia_content .vend_rows_ex_header th, #gaia_content .vend_rows_sh_header th, #gaia_content .watchlist_rows_header th {
+    height: 24px;
+    font-weight: bold;
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/rs_top_blue_920.png) no-repeat scroll top center; */
+    background: #484848;
+}
+#content .gaia_navigation_tabs .tab {
+    text-align: center;
+    display: block;
+    margin: 0 0 0 -1px;
+    width: auto;
+    height: 28px;
+    float: left;
+    border: 1px solid #17b2ff;
+    background: #242424;
+}
+#content .gaia_navigation_tabs .tab.current_tab {
+    background-color: #484848;
+    color: #29c;
+    border-bottom: 1px solid #17b2ff;
+}
+#gaia_content .vend_rows_ex_footer, #gaia_content .watchlist_rows_footer, #gaia_content .item_rows_footer {
+    height: 7px;
+    width: 920px;
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/rs_bottom_blue_920.png) repeat-x scroll 0 0; */
+    margin-left: 10px;
+    background: #484848;
+    font-size: 1px;
+}
+#gaia_content .searchbox_stretched_header {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/rs_top_brown_920.png) no-repeat scroll bottom left; */
+    background: #484848;
+}
 #gaia_content .moduleHeaderGenericRight {
     /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/hd_top_blue_400.png) no-repeat scroll 0 0; */
     background: #484848;
@@ -605,6 +712,6 @@ a{
 a:hover{
     color: #fff;
 }
-body{
-    background: #242424;
+a:after{
+    color: #17b2ff;
 }
