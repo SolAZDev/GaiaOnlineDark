@@ -1,0 +1,1053 @@
+/*
+Gaia Online Azenis Theme Attempt
+By SolAZDev - solazdev@gmail.com
+-Done in a very sleepy night-
+https://github.com/lordsolrac/GaiaOnlineDark
+Version :: 0.3a
+
+CHANGELOG::
+0.1a - Initial Release, Solrac was Super Sleepy but coudln't sleep
+0.2a - Fixed minor bugs and missing pieces, still investigatin' other parts
+0.3a - Fixed some pieces for the Non-BetterGaia users
+0.4a - Major Fixes to The Vanilla Gaia
+
+*/
+
+
+/* Main Navigation */
+.main_panel_container .main_panel a {
+    text-decoration: none;
+    color: #17b2ff;
+}
+#nav > li .main_panel_container .main_panel {
+    margin: 0;
+    padding: 0;
+    background: #484848;
+}
+#nav > li .main_panel_container {
+    position: absolute;
+    margin: 0;
+    top: 100%;
+    background: rgba(72,72,72,0.98);
+    padding: 0 0 1.25em;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 0.25em rgba(0,0,0,0.25);
+}
+body.app-page_privmsgs #gaia_content td.quote {
+    background-color: #484848;
+    border: 1px solid #17b2ff;
+    color: #17b2ff;
+    padding: 5px;
+}
+.mega-menu .panel_bottom {
+    display: block;
+    position: relative;
+    width: 456px;
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/gaia_global/gaia_panelnav/bg_topnav_456x13.png) repeat-y 0 0; */
+    background: none;
+}
+.megamenu-sections, .mega-menu ul {
+    font-family: arial,helvetica,clean,sans-serif;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #17b2ff;
+    background: none;
+    line-height: 1;
+}
+#gaia_menu_bar, .megamenu-divider, .mega-menu .megamenu-menu-selected .megamenu-section-trigger, .no-js .mega-menu li:hover .megamenu-section-trigger, .mega-menu li.panel-open .megamenu-section-trigger, .no-js .megamenu-menu-selected:hover .megamenu-section-trigger, .megamenu-menu-selected.panel-open .megamenu-section-trigger, .megamenu-no-panel.megamenu-menu-selected .megamenu-section-trigger, .no-js .mega-menu .megamenu-standard-menu:hover .megamenu-section-trigger:hover, .no-js .mega-menu .megamenu-extended-menu:hover .megamenu-section-trigger:hover, .mega-menu .megamenu-standard-menu.panel-open .megamenu-section-trigger:hover, .mega-menu .megamenu-extended-menu.panel-open .megamenu-section-trigger:hover, .mega-menu .megamenu-standard-menu, .mega-menu .megamenu-menu-home, .mega-menu #color_menu, .mega-menu .megamenu-no-panel, .megamenu-no-panel.panel-open a, .mega-menu .lt_selector, .mega-menu .rt_selector, .megamenu-extended-menu, .mega-menu .panel-left, .mega-menu .panel-right, .mega-menu .single_panel {
+    background-image: url(http://s.cdn.gaiaonline.com/images/gaia_global/gaia_panelnav/navsprite_01_PNG24.png);
+    background: #484848;
+}
+.mega-menu .main_panel .panel-links a, .mega-menu .main_color_panel .panel-links a, .mega-menu .panel-more a, .mega-menu .panel-links span {
+    font-size: 15px;
+    color: #17b2ff;
+    font-style: oblique;
+}
+
+
+/* MYGAIA */
+/****Nav*******/
+#content #mygaia_tabs.gaia_navigation_tabs .tab a, #content #mygaia_tabs.gaia_navigation_tabs .tab a:hover, #mygaia_tabs.gaia_navigation_tabs .tab a, #mygaia_tabs.gaia_navigation_tabs .tab a:hover {
+    background: transparent url(http://imgh.us/MyGaiaIcons1_5.svg) no-repeat 0 0;
+}
+#content #mygaia_tabs.gaia_navigation_tabs .tab a.yuimenu_trigger, #mygaia_tabs.gaia_navigation_tabs .tab a.yuimenu_trigger {
+    background-image: url(http://imgh.us/tb_tab_icons_12x35.gif);
+}
+/*****/
+#gaia_content, #content {
+    background-color: #242424;
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+/*#gaia_content #bd .grid_rc_container_top .rc_top_right {
+     background: url(http://s.cdn.gaiaonline.com/images/gaia_global/body/shared/rs_rounded_corners_666_8x8.gif) top right; 
+}*/
+#gaia_content {
+    min-width: 1140px;
+    padding: 20px 14px;
+    margin: 0;
+    background: #242424;
+}
+#gaia_content:after {
+    min-width: 1140px;
+    padding: 20px 14px;
+    margin: 0;
+    background: #242424;
+}
+
+#bd .mg_content.suggested .ft {
+    background-color: #484848;
+    font-size: 11px;
+    border-left: 1px solid #17b2ff;
+}
+#bd .mg_content .bd li{
+    height: 28px;
+    line-height: 14px;
+    list-style-type: none;
+    color: #fff;
+    background: #242424;
+}
+.friends .ft.see_all div.see_all {
+    padding: 8px 0 15px 35px;
+    background: #484848;
+}
+#gaia_content .my_status {
+    background-color: #242424;
+    padding: 32px 0 0 0;
+}
+#gaia_content .user_status_message .status {
+    background: none;
+    float: left;
+    padding-top: 20px;
+    width: 225px;
+    position: relative;
+    overflow: hidden;
+}
+#bd .mg_content .ft {
+    background-color: #484848;
+    border-right: 1px solid #17b2ff;
+    border-bottom: 1px solid #17b2ff;
+}
+#gaia_content .user_status_message .status div.lead {
+    width: 8px;
+    height: 7px;
+    font-size: 1%;
+    text-indent: -500px;
+    overflow: hidden;
+    background: none;
+    left: 0;
+    top: 17px;
+    position: absolute;
+    z-index: 10;
+}
+body.mygaia #gaia_content #bd .mg_status .friend_statuses {
+    margin: 0;
+    border-color: #17b2ff;
+    padding: 5px;
+    max-height: 150px;
+    overflow: auto;
+    background: #242424;
+}
+
+.ft.see_all div.see_all {
+    padding: 8px 0 15px 23px;
+    background-color: #484848;
+    width: auto;
+    position: relative;
+}
+
+body.mygaia #gaia_content #bd .mg_content .mg_sprite.hd, body.mygaia #gaia_content #bd .mg_status .mg_sprite.hd {
+    margin: 0;
+    background: none;
+    width: auto;
+    height: auto !important;
+    font: bold 20px "Century Gothic", "TeXGyreAdventorRegular", Arial, sans-serif;
+    color: #17b2ff;
+    padding: 0 1px .25em;
+}
+#bd .suggested h3 {
+    color: #17b2ff;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 0 0 7px;
+}
+
+body.mygaia.app-page_mygaia #gaia_content.grid_ray_davies #bd #yui-main .yui-g {
+    position: relative;
+    background: #242424;
+}
+body.mygaia.app-page_mygaia #gaia_content.grid_ray_davies #bd #yui-main .yui-g:after{
+    position: relative;
+    background: #242424;
+}
+
+body.mygaia #gaia_content #bd .mg_status .my_status .status p, body.mygaia #gaia_content #bd .mg_status .my_status .status p + div {
+    margin: 0;
+    display: block;
+    background: #242424;
+    color: #17b2ff;
+    padding: 3px 2px 2px;
+    font-size: 85%;
+}
+
+#gaia_content .user_status_message h4 {
+    font-size: 85%;
+    background: #242424;
+    color: #17b2ff;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.friends .online_status {
+    font-weight: bold;
+    color: #17b2ff;
+    float: left;
+    width: 81px;
+}
+#bd .mg_content .bd {
+    background-color: #242424;
+    border-top: 1px solid #17b2ff;
+    border-right: 1px solid #17b2ff;
+}
+.right .mystats .bd {
+    padding: 22px 0 23px 26px;
+    border: 1px solid #17b2ff;
+    margin: 0;
+}
+
+a:-any-link {
+    color: #17b2ff;
+    text-decoration: underline;
+    cursor: auto;
+}
+#bd .mystats .ft {
+    height: 10px;
+    background-color: #484848;
+}
+#gaia_content .user_status_message .status p, #gaia_content .user_status_message .status div {
+   /* background: url(http://s.cdn.gaiaonline.com/images/mygaia/bubble-bottom.gif) 7px bottom no-repeat;*/
+    margin: -13px 0 0 0;
+    color: #17b2ff;
+    background: #242424;
+    padding: 0px 15px 5px 15px;
+}
+#bd .friends .bd li {
+    float: left;
+    width: 131px;
+    height: auto;
+    position: relative;
+    padding: 0;
+    margin: 0 1px 20px 1px;
+    font-size: 11px;
+    z-index: 1;
+}
+body.mygaia #gaia_content #bd .mg_status .friend_statuses {
+    margin: 0;
+    border-color: #17b2ff;
+    padding: 5px;
+    max-height: 150px;
+    overflow: auto;
+    background: #242424;
+}
+body.mygaia #gaia_content #bd #friends2.mg_content .bd .bd_inner .friends_wrapper ul.mygaia-friends li:hover {
+    background: #484848;
+    border-radius: 3px;
+}
+body.mygaia #gaia_content #bd #friends2.mg_content .bd .bd_inner .friends_wrapper ul.mygaia-friends li:hover .user_name a {
+	background: #484848;
+}
+body.mygaia #gaia_content #bd #friends2.mg_content .bd .bd_inner .friends_wrapper ul.mygaia-friends li:hover .online_status a {
+    background: #484848;
+}
+#gaia_content #bd a, #gaia_modal #bd a {
+    color: #17b2ff;
+    text-decoration: none;
+    font-style: oblique;
+}
+body.mygaia #gaia_content #bd .mg_content .bd, body.mygaia #gaia_content #bd .mg_status .bd {
+    background: #242424;
+    border: 1px solid #17b2ff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 0;
+    overflow: visible;
+}
+#content #mygaia_tabs.gaia_navigation_tabs .gaia_tab_orphans .tab a, #content #mygaia_tabs.gaia_navigation_tabs .gaia_tab_orphans .tab a:hover {
+    background: #242424;
+    border-bottom: 5px solid #242424;
+}
+#content .gaia_navigation_tabs .yuimenu li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #242424;
+    border-bottom: 1px solid #484848;
+}
+#content .gaia_navigation_tabs .tab .yuimenu ul {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #17b2ff;
+    border-top: 0;
+}
+.gaia-tooltip-container .gaia-tooltip {
+    border: 3px solid #17b2ff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #242424;
+    color: #17b2ff;
+    width: auto;
+    font-size: 11px;
+    overflow: visible;
+}
+.mg_sprite, .controls .close {
+    background: none;
+}
+#hd, #bd, #ft, .yui-g, .yui-gb, .yui-gc, .yui-gd, .yui-ge, .yui-gf {
+    zoom: 1;
+    color: #17b2ff;
+}
+.timestamp{
+    color: #17b2ff;
+}
+
+/* AVI DRESS */
+.rc_shadow_tl{
+    background: none;
+}
+.rc_shadow_tr{
+    background: none;
+}
+.rc_shadow_bd_l{
+    background: none;
+}
+.rc_shadow_bd_r{
+    background: none;
+}
+.rc_shadow_br{
+    background: none;
+}
+.rc_shadow_bl{
+    background: none;
+}
+#left_3col #av_container #av_controls {
+    height: 32px;
+    background-color: #484848;
+    padding: 2px 0 3px 0;
+    margin: 0;
+}
+#left_3col #av_container #av_footer {
+    background: #484848;
+    height: 28px;
+}
+
+#inventory-search form {
+    padding: 5px;
+    background: #484848;
+}
+#items_tabview div.item-list, #other_inventory div.item-list {
+    min-height: 180px;
+    background: #242424;
+}
+#gaia_content #center .yui-content {
+    max-height: 379px;
+    background: #242424;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+/* HOUSES  -- INCOMPLETE */
+#gaia_content #home_wrapper #preference_container #pref_content {
+    text-decoration: none;
+    color: #17b2ff;
+}
+#gaia_content #home_wrapper #preference_container #pref_content {
+    color: #17b2ff;
+    font-size: 93%;
+    background: #242424;
+    border: 1px solid #17b2ff;
+    margin: 5px;
+    padding: 5px;
+}
+/*INVENTORY*/
+#gaia_content #items_tabview em {
+    font: normal normal normal 12px Arial, sans-serif;
+    color: #17b2ff;
+    background: #242424;
+}
+.gaia-tabview-skin .yui-navset .yui-content, .gaia-tabview-skin .yui-navset .yui-navset-top .yui-content {
+    border: 1px solid #242424;
+    background: #242424;
+    padding: 0.25em 0.5em;
+}
+/* GAIA PM */
+tbody#yui_3_9_0_4_1466011252416_180 {
+    position: absolute;
+    left: 700px;
+    bottom: -1px;
+}
+#forumline {
+    background: #242424;
+}
+#gaia_content #pm_content {
+    width: 80px;
+    /*background: #242424;*/
+    float: left;
+    margin: 0px;
+    padding: 5px 0px 0px 10px;
+}
+body.mail #gaia_content #pm_content > table[width='740'][style^='clear:'][style$='left;'] tr[height="20"] {
+    background: linear-gradient(to bottom, #484848, #242424);
+    border: 1px solid #DDD !important;
+    height: 34px !important;
+    vertical-align: top;
+}
+body.mail #gaia_content #pm_content > table[width='740'][style^='clear:'][style$='left;'] tr[height="20"] {
+    background: linear-gradient(to bottom, #242424, #484848);
+    border: 1px solid #242424 !important;
+    height: 34px !important;
+    vertical-align: top;
+}
+yui-gen30{
+    color: #17b2ff;
+}
+#gaia_content #content-padding {
+    position: static;
+    background: #242424;
+}
+#hd, #bd, #ft, .yui-g, .yui-gb, .yui-gc, .yui-gd, .yui-ge, .yui-gf {
+    zoom: 1;
+    background: #242424;
+    color: #17b2ff;
+}
+.postbody {
+    font-family: 'Lucida Grande', LucidaGrande, Lucida, Verdana, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #17b2ff;
+}
+.postcontent .genmed {
+    display: block;
+    padding-top: 5px;
+    color: #17b2ff;
+    background: #484848;
+}
+#gaia_content .row1 {
+    background-color: #242424;
+}
+body.app-page_privmsgs #gaia_content td, body.app-page_privmsgs #gaia_content th {
+    border: 0;
+    padding: 0;
+    background: #242424;
+}
+#messagebox, #gaia_content #messagebox {
+    padding: 10px 10px 10px 90px;
+    margin: 10px;
+    border: 1px solid #17b2ff;
+    position: relative;
+    background-color: #484848;
+    min-height: 60px;
+    height: auto;
+}
+#editor #format_controls {
+    border: 1px solid #17b2ff;
+    padding: 8px 8px 0 8px;
+    background: #484848;
+    position: relative;
+}
+#gaia_content #bd {
+    width: 940px;
+    background-color: #242424;
+    overflow: hidden;
+}
+
+/*FRIENDSHIP*/
+#listdetail th {
+    background-color: #242424;
+    color: #17b2ff;
+    font-size: 10px;
+    padding: 20px 0 7px 0;
+    line-height: 4px;
+    border-bottom: 1px solid #999;
+}
+#listdetail tr.rowon {
+    background-color: #484848;
+}
+#listdetail tr.rowoff {
+    background-color: #242424;
+}
+#tab_friendlist a em {
+    color: #17b2ff;
+    background: #242424;
+}
+#listdetail td.status_message {
+    color: #17b2ff;
+}
+
+/*JournalSkipped*/
+/*Quests - Who still uses this?*/
+#content .queststatustable tr.on {
+    background-color: #242424;
+}
+#content .queststatustable tr.off {
+    background-color: #484848;
+}
+#content .queststatustable th {
+    background-color: #242423;
+    color: #17b2ff;
+    font-size: 10px;
+    padding: 5px 5px;
+    border-bottom: 1px solid #17b2ff;
+    vertical-align: bottom;
+    text-align: left;
+}
+/*Achivements -- Achivements*/
+#incompleted, #available {
+    min-height: 363px;
+    background: #242424;
+}
+.ach .name {
+    float: left;
+    width: 139px;
+    line-height: 51px;
+    margin: 0 0 0 3px;
+    overflow: hidden;
+    color: #17b2ff;
+    font-size: 12px;
+    position: relative;
+    z-index: 1;
+}
+#gaia_content #right .friendspoints #friends_pg {
+    background-color: #242424;
+    border: none;
+    border-bottom: none;
+    border-right: none;
+    margin: 5px -17px -17px 0;
+    padding: 9px 5px;
+    text-align: right;
+}
+
+/* Shops */
+#gaia_content #buy-items-container {
+    width: 496px;
+    background-color: #242424;
+    border: 1px solid #484848;
+    margin: -1px 0 0 0;
+}
+.gcash-price {
+    background: url(http://s.cdn.gaiaonline.com/images/cashshop/sender/browse/ic_gaia_cash_12x12.gif) no-repeat 0 0;
+    color: #17b2ff;
+}
+#gaia_content #you_have .gold-price {
+    margin-right: 10px;
+    color: #17b2ff;
+}
+#modal .bd {
+    padding: 15px 10px 20px 20px;
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/gaia_global/body/modal/modal-ftr_380x1800.gif) no-repeat bottom left; */
+    background: #484848;
+}
+#modal .hd {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/gaia_global/body/modal/modal-hdr_380x226.gif) no-repeat 0 0; */
+    background: #424243;
+}
+#variations div.variation_containers .container {
+    background-color: #242424;
+    border: 1px solid #000;
+    margin: 10px;
+    max-width: 470px;
+}
+#variations .hd {
+    background-color: #242424;
+    height: 11px;
+    position: relative;
+    color: #17b2ff;
+}
+#variations li.inline_pose img {
+    cursor: default;
+    background: #242424;
+}
+#variations img:hover {
+    border: 1px solid #17b2ff;
+}
+.right .gold-price, .right .gcash-price {
+    color: #17b2ff;
+    font-style: italic;
+    font-size: 14px;
+    padding-left: 15px;
+    line-height: 15px;
+}
+gold-price, .gcash-price {
+    color: #17b2ff;
+    font-size: 10px;
+    padding-left: 13px;
+    line-height: 15px;
+}
+
+/* Marketplace - Infliation Galore, THXGAIA*/
+#gaia_content .vend_rows_sh_rowB, #gaia_content .item_rowB, #gaia_content .vend_rows_ex_rowB {
+    background-color: #484848;
+}
+#gaia_content .box_header_stretched {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/rs_box_top_blue_600.png) repeat-x scroll bottom left; */
+    background: #17b2ff;
+}
+#gaia_content .box_footer_stretched {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/rs_box_bottom_blue_600.png) repeat-x scroll 0 0; */
+    margin-bottom: 10px;
+    background: #17b2ff;
+}
+#gaia_content div.vend_rows_ex, #gaia_content .moduleContainer {
+    border: 2px solid #17b2ff;
+    border-style: none solid none solid;
+    width: 916px;
+}
+#gaia_content .searchbox_content {
+    background-color: #484848;
+    border-left: 2px #484848 solid;
+    border-right: 2px #484848 solid;
+    font-weight: bold;
+}
+#gaia_content .searchbox_stretched_footer {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/rs_bottom_brown_920.png) repeat-x scroll top left; */
+    background: #484848;
+}
+#gaia_content .item_rows_header th, #gaia_content .vend_rows_ex_header th, #gaia_content .vend_rows_sh_header th, #gaia_content .watchlist_rows_header th {
+    height: 24px;
+    font-weight: bold;
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/rs_top_blue_920.png) no-repeat scroll top center; */
+    background: #484848;
+}
+#content .gaia_navigation_tabs .tab {
+    text-align: center;
+    display: block;
+    margin: 0 0 0 -1px;
+    width: auto;
+    height: 28px;
+    float: left;
+    border: 1px solid #17b2ff;
+    background: #242424;
+}
+#content .gaia_navigation_tabs .tab.current_tab {
+    background-color: #484848;
+    color: #29c;
+    border-bottom: 1px solid #17b2ff;
+}
+#gaia_content .vend_rows_ex_footer, #gaia_content .watchlist_rows_footer, #gaia_content .item_rows_footer {
+    height: 7px;
+    width: 920px;
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/rs_bottom_blue_920.png) repeat-x scroll 0 0; */
+    margin-left: 10px;
+    background: #484848;
+    font-size: 1px;
+}
+#gaia_content .searchbox_stretched_header {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/rs_top_brown_920.png) no-repeat scroll bottom left; */
+    background: #484848;
+}
+#gaia_content .moduleHeaderGenericRight {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/hd_top_blue_400.png) no-repeat scroll 0 0; */
+    background: #484848;
+}
+#gaia_content .moduleHeaderLuxury {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/hd_top_blue_400.png) no-repeat scroll 0 0; */
+    background: #484848;
+}
+#gaia_content .moduleHeaderSnapshot {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/hd_top_blue_400.png) no-repeat scroll 0 0; */
+    background: #484848;
+}
+.moduleLeft .outfitsHeader {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/hd_top_blue_400.png) no-repeat scroll 0 0; */
+    background: #484848;
+}
+#gaia_content .moduleHeaderGhetto {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/marketplace/hd_top_blue_400.png) no-repeat scroll 0 0; */
+    background: #484848;
+}
+#gaia_content #searchbox_mini .searchbox_content form {
+    padding: 10px 15px;
+    background: #484848;
+}
+#gaia_content #bd a, #gaia_modal #bd a {
+    color: #17b2ff;
+    /*background: #242424;*/
+    text-decoration: none;
+}
+#content .gaia_navigation_tabs .tab_end {
+    /* background: url(http://s.cdn.gaiaonline.com/images/mygaia/rs_tab_endcap_gradient_35.gif) left top no-repeat; */
+    background: linear-gradient(to right, rgba(72,72,72,1), rgba(36,36,36,0));
+}
+#gaia_content #bd a, #gaia_modal #bd a {
+    color: #17b2ff;
+    text-decoration: none;
+}
+/* FORUM */
+/**************SubForumImageFix*************/
+#gaia_content {
+    width: 950px!important;
+    padding: 10px 0px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    margin: 0;
+    /* background: #242424 url(//s.cdn.gaiaonline.com/images/gaia_global/body/shared/rs_bodygradient.gif) repeat-x 0 0; */
+    background: #242424;
+}
+#gaia_content #c4 {
+    background-color: #484848;
+}
+#gaia_content #c4, #gaia_content #c4 .guildcats {
+    border-color: #17b2ff;
+}
+#gaia_content .subforums {
+    border: 2px solid #17b2ff;
+    border-radius: 5px;
+    position: relative;
+    background: #484848;
+    margin-bottom: 20px;
+    min-height: 95px;
+}
+#gaia_content #c27 .hd h3 {
+    background: url(http://i.imgur.com/dVyoHW3.png);
+    background-position: 0 0;
+    width: 236px;
+    height: 70px;
+}
+#gaia_content #c3 .hd h3 {
+    background: url(http://i.imgur.com/dVyoHW3.png);
+    background-position: -708px 0;
+    width: 236px;
+    height: 70px;
+}
+
+#gaia_content #c26 .hd h3 {
+    background: url(http://i.imgur.com/dVyoHW3.png);
+    background-position: -944px 0;
+    width: 236px;
+    height: 70px;
+}
+#gaia_content #c12 .hd h3 {
+    background: url(http://i.imgur.com/dVyoHW3.png);
+    background-position: -1180px 0;
+    width: 236px;
+    height: 70px;
+}
+#gaia_content #c4 .hd h3 {
+    background: url(http://i.imgur.com/dVyoHW3.png);
+    background-position: -236px 0;
+    width: 236px;
+    height: 70px;
+}
+#gaia_content #c6 .hd h3 {
+    background: url(http://i.imgur.com/dVyoHW3.png);
+    background-position: -472px 0;
+    width: 236px;
+    height: 70px;
+}
+#gaia_content #c7 .hd h3 {
+    background: url(http://i.imgur.com/dVyoHW3.png);
+    background-position: -1416px 0;
+    width: 236px;
+    height: 70px;
+}
+/**************SubForumFixes***********/
+#gaia_content #c26 {
+    background-color: #484848;
+}
+#gaia_content #c26, #gaia_content #c26 .guildcats {
+    border-color: #17b2ff;
+}
+#gaia_content #c12 {
+    background-color: #484848;
+}
+#gaia_content #c12, #gaia_content #c12 .guildcats {
+    border-color: #17b2ff;
+}
+#gaia_content #c27 {
+    background-color: #484848;
+}
+#gaia_content #c27, #gaia_content #c27 .guildcats {
+    border-color: #17b2ff;
+}
+#gaia_content #c6 {
+    background-color: #484848;
+}
+#gaia_content #c6, #gaia_content #c6 .guildcats {
+    border-color: #17b2ff;
+}
+#gaia_content #c7 {
+    background-color: #484848;
+}
+#gaia_content #c7, #gaia_content #c7 .guildcats {
+    border-color: #17b2ff;
+}
+#gaia_content .subforums .bd {
+    padding: 0 3px 3px 151px;
+}
+#forumlite-header .linklist a:visited, #forum-header .linklist a:visited {
+    color: #17b2ff;
+    font-style: oblique;
+}
+/**************/
+#gaia_content table.results tr.topic {
+    background-color: #242424;
+}
+#gaia_content table.results .post td {
+    padding-top: 0;
+    padding-left: 32px;
+    background-color: #242424;
+}
+#bd .main .bd {
+    background: none;
+}
+#bottom_separator {
+    background: none;
+    width: 675px;
+    height: 25px;
+    margin-left: 75px;
+}
+#gaia_content #c6 #bottom_separator {
+    background: none;
+    width: 675px;
+    height: 25px;
+    margin-left: 75px;
+}
+#gaia_content #c7 #bottom_separator {
+    background: none;
+    width: 675px;
+    height: 10px;
+    margin-left: 75px;
+}
+#gaia_content #c27 #bottom_separator {
+    background: none;
+    width: 675px;
+    height: 21px;
+    margin-left: 75px;
+}
+#gaia_content #c12 #bottom_separator {
+    background: none;
+    width: 675px;
+    height: 25px;
+    margin-left: 75px;
+}
+#gaia_content #c6 .middle_separator, #gaia_content #c26 .middle_separator, #gaia_content #c12 .middle_separator {
+    border-top: 1px solid #17b2ff;
+    width: 455px;
+    height: 1px;
+    position: relative;
+    top: -30px;
+    left: 188px;
+}
+.one-line-title, .creator {
+    height: 18px;
+    overflow: hidden;
+    background: #242424;
+}
+#gaia_content table.forum-list th, #gaia_content table.forum-list td, table.forum-list th, table.forum-list td {
+    padding: 3px;
+    margin: 0;
+    border: 0;
+    color: #17b2ff;
+    background: #242424;
+}
+#gaia_content table.forum-list a:visited, table.forum-list a:visited {
+    color: #17b2ff;
+}
+#gaia_content table.forum-list thead th, table.forum-list thead th {
+    background: #484848;
+    font-weight: bold;
+}
+#gaia_content table.forum-list thead th.corner_ul, table.forum-list thead th.corner_ul {
+    background: none;
+}
+#gaia_content table.forum-list thead th.corner_ur, table.forum-list thead th.corner_ur {
+    background: none;
+}
+#gaia_content a:link, #gaia_content a:hover, #gaia_content a:visited {
+    color: #17b2ff;
+}
+#content-padding, #forum-modtools, #thread_leaderboard_ad {
+    padding: 0 10px 10px 16px;
+    background-color: #242424;
+    color: #17b2ff;
+}
+#thread_header {
+    background: #484848;
+    position: relative;
+    margin-right: 36px;
+    margin-bottom: 10px;
+    padding: 0px 0px 0px 27px;
+    border-top: 1px dotted #17b2ff;
+    border-bottom: 1px dotted #17b2ff;
+    border-right: 1px dotted #17b2ff;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+/*************Posts************/
+.speech_bubble.say .top-left, .speech_bubble.say .top-right, .speech_bubble.say .bottom-left, .speech_bubble.say .bottom-right {
+    background: none;
+    height: 16px;
+}
+.speech_bubble.say .tail {
+    /* background-image: url(http://s.cdn.gaiaonline.com/images/posts/say/say_sprite_2.png); */
+    background: none;
+    background-position: 0 -31px;
+    height: 40px;
+    left: -17px;
+    position: absolute;
+    top: 32px;
+    width: 19px;
+}
+.speech_bubble.say .content {
+    background-color: #484848;
+    border: 2px solid #17b2ff;
+    border-radius: 5px;
+    min-height: 75px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 15px;
+}
+div.postcontent .quote .quoted {
+    background: #484848;
+    border: 1px solid #17b2ff;
+    padding: 10px;
+}
+div.postcontent .code {
+    border: 1px solid #006;
+    background: #242424;
+    font-family: "Courier", "Courier New", "monospace";
+}
+.speech_bubble.whisper .top-left, .speech_bubble.whisper .top-right, .speech_bubble.whisper .bottom-left, .speech_bubble.whisper .bottom-right {
+    background: none;
+    height: 16px;
+}
+.speech_bubble.whisper .border-rt {
+    /* background: url(http://s.cdn.gaiaonline.com/images/posts/whisper/whisper_sides.gif) repeat-y top left; */
+    background: none;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    width: 2px;
+}
+.speech_bubble.whisper .border-lt {
+    /* background: url(http://s.cdn.gaiaonline.com/images/posts/whisper/whisper_sides.gif) repeat-y top left; */
+    background: none;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    width: 2px;
+}
+.speech_bubble.whisper .tail {
+    background-image: none;
+    background-position: 0 -30px;
+    height: 40px;
+    left: -17px;
+    position: absolute;
+    top: 32px;
+    width: 19px;
+}
+.speech_bubble.whisper .content {
+    background-color: #484848;
+    min-height: 75px;
+    padding: 0 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    border-radius: 5px;
+    border: 2px dotted #17b2ff;
+}
+.speech_bubble.think .content {
+    background-color: #484848;
+    min-height: 75px;
+    padding: 0 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    border-radius: 5px;
+    border: 2px inset #17b2ff;
+}
+.speech_bubble.think .top-left, .speech_bubble.think .top-right, .speech_bubble.think .bottom-left, .speech_bubble.think .bottom-right {
+    /* background: url(http://s.cdn.gaiaonline.com/images/posts/think/think_sprite_2.gif) no-repeat top left; */
+    background: none;
+}
+.speech_bubble.think .tail {
+    background-image: none;
+    background-position: 3px -113px;
+    height: 61px;
+    left: -29px;
+    position: absolute;
+    top: 35px;
+    width: 30px;
+    z-index: 4;
+}
+.speech_bubble.think .border-lt {
+    background: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 10px;
+}
+.speech_bubble.think .border-rt {
+    background: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 10px;
+}
+
+
+
+/*************QuickReply***********/
+#qr_container {
+    width: 319px;
+    padding-bottom: 15px;
+    position: absolute;
+    display: none;
+    background: #242424 url(http://s.cdn.gaiaonline.com/images/forum/quick_reply_bg.png) no-repeat;
+    border: 1px solid #17b2ff;
+    z-index: 191;
+    border-radius: 5px;
+}
+#qr_container #qr_text {
+    margin: 12px 15px 0px 15px;
+    width: 289px;
+    height: 118px;
+    background: #484848;
+    color: #17b2ff;
+}
+
+a{
+    color: #17b2ff;
+}
+a:hover{
+    color: #fff;
+}
+a:after{
+    color: #17b2ff;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    color: #17b2ff;
+}
+
+a, a:link, a:visited {
+    color: #17b2ff;
+    font-style: oblique;
+}
+/***** Forum/Profile Fix Thanks to AlthIndor *******/
+body:not(#extendedProfileBody):not(#viewer):not(#yuievtautoid-0) {
+    background: url(http://s.cdn.gaiaonline.com/images/global_bg/bg2.jpg) repeat-x fixed bottom left;
+    background-color: #12403D;
+    height: auto;
+    position: relative;
+    min-height: 100%;
+}
+/******* Dark Backgrond  for Launch ***********/
+#yuievtautoid-0{
+    /*background: #242424; --Not Working for Launch Only, Covers all pages*/ 
+}
