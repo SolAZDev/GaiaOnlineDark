@@ -3,7 +3,7 @@ Gaia Online Azenis Theme Attempt
 By SolAZDev - solazdev@gmail.com
 -Done in a very sleepy night-
 https://github.com/lordsolrac/GaiaOnlineDark
-Version :: 0.3a
+Version :: 0.5pa
 
 CHANGELOG::
 0.1a - Initial Release, Solrac was Super Sleepy but coudln't sleep
@@ -12,7 +12,6 @@ CHANGELOG::
 0.4a - Major Fixes to The Vanilla Gaia
 
 */
-
 
 /* Main Navigation */
 .main_panel_container .main_panel a {
@@ -76,10 +75,10 @@ body.app-page_privmsgs #gaia_content td.quote {
     background-image: url(http://imgh.us/tb_tab_icons_12x35.gif);
 }
 /*****/
-#gaia_content, #content {
+/*#gaia_content, #content {
     background-color: #242424;
     width: 1140px;
-    margin: 0 auto;
+    /*margin: 0 auto;
     position: relative;
     z-index: 2;
 }
@@ -314,6 +313,81 @@ body.mygaia #gaia_content #bd .mg_content .bd, body.mygaia #gaia_content #bd .mg
     color: #17b2ff;
 }
 
+
+
+/*** Comments ***/
+#messagebox.good, #messagebox.msggood {
+    background: #484848 url(http://s.cdn.gaiaonline.com/images/layout/gaialol/info_rockpuppy.gif) no-repeat 10px 10px;
+}
+#gaia_content, #content { /*ObviouslyNeeds Fixing*/
+    background-color: #242424;
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+#comments {
+    background: #242424 url(http://s.cdn.gaiaonline.com/images/profiles/v1/classic/comments_header_tile.gif) top left repeat-x;
+}
+.caption:before {
+    display: block;
+    margin: -2px -2px -2px -2px;
+    /*content: url(http://s.cdn.gaiaonline.com/images/profiles/v1/classic/caption_tl.gif);
+    content: #484848;
+    background: url(http://s.cdn.gaiaonline.com/images/profiles/v1/classic/caption_tr.gif) top right no-repeat;*/
+    background: #484848;
+    content: none;
+    border-radius: 5px;
+    line-height: .1;
+    border-top: 1px solid #17b2ff;
+}
+.caption {
+    border: 2px solid #17b2ff;
+    background: #484848;
+    border-radius: 5px;
+}
+.caption .message {
+    margin-bottom: 10px;
+    background: none;
+}
+.caption:after {
+    display: block;
+    margin: 2px 2px 2px 2px;
+    content:none;
+    line-height: .1;
+    content: normal;
+}
+
+.caption2:before {
+    display: block;
+    margin: -2px -2px -2px -2px;
+    /*content: url(http://s.cdn.gaiaonline.com/images/profiles/v1/classic/caption_tl.gif);
+    content: #484848;
+    background: url(http://s.cdn.gaiaonline.com/images/profiles/v1/classic/caption_tr.gif) top right no-repeat;*/
+    background: #484848;
+    content: none;
+    border-radius: 5px;
+    line-height: .1;
+    border-top: 1px solid #17b2ff;
+}
+.caption2 {
+    border: 2px solid #17b2ff;
+    background: #484848;
+    border-radius: 5px;
+}
+.caption2 .message {
+    margin-bottom: 10px;
+    background: none;
+}
+.caption2:after {
+    display: block;
+    margin: 2px 2px 2px 2px;
+    content:none;
+    line-height: .1;
+    content: normal;
+}
+
+
 /* AVI DRESS */
 .rc_shadow_tl{
     background: none;
@@ -529,6 +603,12 @@ body.app-page_privmsgs #gaia_content td, body.app-page_privmsgs #gaia_content th
     padding: 9px 5px;
     text-align: right;
 }
+#gaia_content .message_box, .subject, .in {
+    width: 520px;
+    border: 1px solid #17b2ff;
+    height: 300px;
+    background: #484848;
+}
 
 /* Shops */
 #gaia_content #buy-items-container {
@@ -709,6 +789,10 @@ gold-price, .gcash-price {
     background: #484848;
     margin-bottom: 20px;
     min-height: 95px;
+}
+.subforums .forum_desc {
+    font-size: 85%;
+    color: #17b2ff;
 }
 #gaia_content #c27 .hd h3 {
     background: url(http://i.imgur.com/dVyoHW3.png);
@@ -1050,4 +1134,15 @@ body:not(#extendedProfileBody):not(#viewer):not(#yuievtautoid-0) {
 /******* Dark Backgrond  for Launch ***********/
 #yuievtautoid-0{
     /*background: #242424; --Not Working for Launch Only, Covers all pages*/ 
+}
+#gamerollgame::before { /**** Praise Anthl ****/
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #242424;
+    z-index: -1;
 }
