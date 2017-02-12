@@ -1,0 +1,154 @@
+/**********************************
+			Gaia Azenis 2
+			 By SolAZDev
+
+		Obvious Work In Progress
+
+			HEAD COLORS
+		#242424	BG
+		#484848	FG
+		#17B2FF	Links, and Accents
+		#FFF	Text Mostly
+		#666	Dark Text
+		
+			READING THE CSS
+	I'm trying to keep this as organized
+	as possible. Its Read Left-Down-Right-Down
+	Like a normal textbook except downwards
+	think of a bible and its two towers of text.
+
+	TODO LIST -------
+	-
+
+***********************************/
+
+/***** Gaia HotFixes ***********/
+
+
+/***** Gaia General ***********/
+
+#gaia_content #bd a, #gaia_modal #bd a {
+    color: #17b2ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/***** SECT - MY GAIA *******/
+#content #mygaia_tabs.gaia_navigation_tabs .tab a, #content #mygaia_tabs.gaia_navigation_tabs .tab a:hover, #mygaia_tabs.gaia_navigation_tabs .tab a, #mygaia_tabs.gaia_navigation_tabs .tab a:hover {
+    background: transparent url(http://imgh.us/MyGaiaIcons1_5.svg) no-repeat 0 0;
+}
+#mygaia_tabs.gaia_navigation_tabs .tab {
+    border-color: #484848;
+}
+#content #mygaia_tabs.gaia_navigation_tabs .tab a.yuimenu_trigger, #mygaia_tabs.gaia_navigation_tabs .tab a.yuimenu_trigger {
+    background-image: url(http://imgh.us/tb_tab_icons_12x35.gif);
+}
+/*** MyGaia - Main Page ***/
+.mg_sprite, .controls .close { /* MyGaia Backgrounds*/
+   background: url(http://imgh.us/mgsprites.png) no-repeat 0 0;
+}
+#hd, #bd, #ft, .yui-g, .yui-gb, .yui-gc, .yui-gd, .yui-ge, .yui-gf {
+    zoom: 1;
+    background: #242424;
+}
+.friends .online_status {
+    font-weight: bold;
+    color: #17b2ff;
+    float: left;
+    width: 81px;
+}
+#bd .mg_content.req li.success {
+    background-color: #17b2ff;
+    color: white;
+}
+#bd .mg_content .bd { /* windows & Borders*/
+    background-color: #484848;
+    border-top: 1px solid #17b2ff;
+    border-right: 1px solid #17b2ff;
+    border-top-right-radius: 5px;
+    color: white;
+}
+#bd .mg_content .ft { /* Window Footers & Borders */
+    background-color: #484848;
+    border-right: 1px solid #17b2ff;
+    border-bottom: 1px solid #17b2ff;
+    border-bottom-right-radius: 5px;
+}
+.ft.see_all div.see_all {
+    padding: 8px 0 8px 23px;
+    background-color: #484848;
+    width: auto;
+    position: relative;
+}
+.mg_sprite.top_rt, .mg_sprite.btm_rt {
+    float: right;
+    background-position: 0 0;
+    display: none;
+}
+#bd .suggested h3 {
+    color: #17b2ff;
+    text-decoration: underline;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 0 0 7px;
+}
+
+.req li:hover,
+.notices li:hover,
+.mystuff li:hover {
+  background-color: transparent;
+}
+/* Left stuff */
+#bd .mg_content.suggested .bd {
+    padding: 5px 15px 9px;
+    background-color: #484848;
+    border: none;
+    border-left: 1px solid #17b2ff;
+    border-right: 1px solid #17b2ff;
+}
+#suggested_friends .friend {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px dotted #17b2ff	;
+    width: 261px;
+    margin: 2px 0 5px 0;
+    padding: 4px 0 0 7px;
+}
+#bd .mg_content.suggested .ft {
+    background: linear-gradient(to bottom, #484848 50%,#17b2ff 100%);
+    font-size: 11px;
+    border-left: 1px solid #17b2ff;
+    border-bottom-left-radius: 5px;
+}
+#bd .mg_status .bd {
+    border: 1px solid #17b2ff;
+    border-radius: 5px;
+}
+#gaia_content .my_status {
+    background-color: #484848;
+    padding: 32px 0 0 0;
+}
+#gaia_content .friend_statuses {
+    border-top: 3px solid #17b2ff;
+    background: #484848;
+}
+.friends .ft.see_all div.see_all a, .friends .ft.see_all div.see_all span {
+    float: left;
+    width: auto;
+    color: white;
+    font-size: 12px;
+}
+#gaia_content #mygaia_see_more_status {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-left: 10px;
+    font-size: 85%;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #484848 75%, #17b2ff 100%);
+}
+.right .mystats .bd {
+    padding: 22px 0 23px 26px;
+    border: none;
+    border-left: 1px solid #17b2ff;
+    margin: 0;
+}
