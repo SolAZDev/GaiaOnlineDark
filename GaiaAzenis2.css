@@ -29,10 +29,18 @@
 
 #gaia_content #bd a, #gaia_modal #bd a {
     color: #17b2ff;
-    font-weight: bold;
     text-decoration: none;
 }
-
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: bold;
+    color: #17b2ff;
+}
+td{
+    /*background: #484848;*/
+}
+tr{
+    background: #242424;
+}
 /***** SECT - MY GAIA *******/
 #content #mygaia_tabs.gaia_navigation_tabs .tab a, #content #mygaia_tabs.gaia_navigation_tabs .tab a:hover, #mygaia_tabs.gaia_navigation_tabs .tab a, #mygaia_tabs.gaia_navigation_tabs .tab a:hover {
     background: transparent url(http://imgh.us/MyGaiaIcons1_5.svg) no-repeat 0 0;
@@ -151,4 +159,69 @@
     border: none;
     border-left: 1px solid #17b2ff;
     margin: 0;
+}
+
+/* Avi Dressup */
+.rc_shadow_bd_l, .rc_shadow_bd_r, .rc_shadow_tl, .rc_shadow_tr, .rc_shadow_bl, .rc_shadow_br {
+    /* background: transparent url(http://s.cdn.gaiaonline.com/images/gaia_global/body/avatar/rs_shadow-stroke_ml.gif) repeat-y scroll 0 0; */
+    background: none;
+}
+#left_3col #av_container #av_footer {
+    /*background: url(http://s.cdn.gaiaonline.com/images/gaia_global/body/avatar/rs_silver_gradient_28.gif) repeat-x; */
+    background: linear-gradient(to bottom, #55505F 0%, #242424 50%);
+    height: 28px;
+}
+#equipped_items {
+    position: relative;
+    margin: 5px 15px 0 0;
+    border-radius: 5px;
+    background: #484848;
+    border: 1px solid #17b2ff;
+    padding: 4px;
+    margin-bottom: 15px;
+}
+.gaia-tabview-skin .yui-navset .yui-content, .gaia-tabview-skin .yui-navset .yui-navset-top .yui-content {
+    border: 1px solid #17b2ff;
+    border-top-right-radius: 5px;
+    background: #484848;
+    border-bottom-left-radius: 5px;
+    padding: 0.25em 0.5em;
+    border-bottom-right-radius: 5px;
+}
+#gaia_content #tabs_container .item-list img {
+    /* border: 1px solid #dde; */
+    border: none;
+}
+#gaia_content #tabs_container .item-list .notEquipped {
+    border: 1px solid #484848; 
+}
+#outfits_tab {
+    width: 115px;
+    height: 50px;
+    background: /* Needs Replacement */ url(http://s.cdn.gaiaonline.com/images/inventory/btn_outfits_115x50.gif) left top no-repeat;
+    position: relative;
+    top: -9px;
+    float: left;
+    cursor: pointer;
+}
+.gaia-tabview-skin .tabview_rc_container_top .rc_top_right, .gaia-tabview-skin .tabview_rc_container_bottom .rc_bottom_right {
+    background: none;
+}
+/* Inventory */
+#inventory-intro .text-area .title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+}
+#inventory-intro .text-area p {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    color: white;
+}
+/* Private Messages */
+body.app-page_privmsgs #gaia_content td, body.app-page_privmsgs #gaia_content th {
+    border: 0;
+    padding: 0;
+    color: white;
 }
